@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 use_doorkeeper
 
 
-    get '/api/posts' => "api/posts#index", as: :api_posts
-
+    get '/api/posts' => "api/posts#index", as: :api_posts #returns all posts
+    get 'api/posts/:id' => "api/posts#show", as: :api_post #returns post detail
 
 
 
