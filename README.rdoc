@@ -1,3 +1,48 @@
+API DEFINITION
+=======
+
+
+This app allows authenticated users to view/create/update/delete posts
+
+Below, you can find the API descriptions
+
+
+0. Authenticate
+
+
+
+1. View the group of posts:
+
+
+  request:  GET /api/posts
+
+Request body: n/a
+
+2. View a specific post
+
+request:    GET /api/posts/:id
+
+body: n/a
+
+3. Create a post
+
+    POST /api/posts creates a post
+
+
+
+
+    PUT /api/posts/:id updates a post
+    PATCH /api/posts/:id updates a post
+    DELETE /api/posts/:id deletes a post
+
+
+
+
+
+
+
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
