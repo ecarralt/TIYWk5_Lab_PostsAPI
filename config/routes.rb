@@ -4,6 +4,17 @@ Rails.application.routes.draw do
 use_doorkeeper
 
 
+    get '/api/posts' => "api/posts#index", as: :api_posts
+
+
+
+
+    # GET /api/posts/:id gives details of a post
+    # POST /api/posts creates a post
+    # PUT /api/posts/:id updates a post
+    # PATCH /api/posts/:id updates a post
+    # DELETE /api/posts/:id deletes a post
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
