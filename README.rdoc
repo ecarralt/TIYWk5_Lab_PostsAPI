@@ -18,11 +18,30 @@ Below, you can find the API descriptions
 
 Request body: n/a
 
+Will return all posts in this format:
+
+{
+  posts: [
+    {"id": 2, "title": "Yolo"},
+    {"id": 3, "title": "Bolo"},
+  ]
+}
+
 2. View a specific post
 
 request:    GET /api/posts/:id
 
 body: n/a
+
+Will return post detail in this format:
+
+
+{
+  "post": {
+    "id": 2,
+    "title": "This is my second post!"
+  }
+}
 
 3. Create a post
 
