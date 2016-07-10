@@ -58,11 +58,38 @@ Will return post detail in this format:
 
     POST /api/posts creates a post
 
+request body:
+
+    {
+      "post": {
+        "title": ""
+      }
+    }
+
+returns the post in the same form:
+{
+  "post": {
+    "id": 2,
+    "title": "This is my second post!"
+  }
+}
 
 
+4. Update a post
 
     PUT /api/posts/:id updates a post
     PATCH /api/posts/:id updates a post
+
+request body must follow:
+
+{
+  "post": {
+    "title": ""
+  }
+}
+
+
+5. Delete a post
     DELETE /api/posts/:id deletes a post
 
 
