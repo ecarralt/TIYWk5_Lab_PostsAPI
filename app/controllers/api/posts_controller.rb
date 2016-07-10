@@ -16,4 +16,15 @@ class Api::PostsController < ApplicationController
     @post = Post.find_by id: params[:id]
   end
 
+  def create
+    @post = Post.new
+    @post.title = params[:post][:title]
+    if @post.save
+      render :show, status: 201
+    else
+      render json: {errors: @post.errors}, status: 422
+    end
+
+  end
+
 end

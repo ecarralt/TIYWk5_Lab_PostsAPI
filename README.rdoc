@@ -9,6 +9,17 @@ Below, you can find the API descriptions
 
 0. Authenticate
 
+  post credentials using:
+
+    POST '/oauth/token'
+
+  credentials:
+
+  {
+    "username": "",
+    "password": "",
+    "grant_type": "password"
+  }
 
 
 1. View the group of posts:
