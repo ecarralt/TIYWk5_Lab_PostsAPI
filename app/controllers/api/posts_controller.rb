@@ -27,4 +27,15 @@ class Api::PostsController < ApplicationController
 
   end
 
+  def update
+    @post = Post.find_by id: params[:id]
+    @post.title = params[:post][:title]
+    if @post.save
+      render :show, status: 201
+    else
+      render json: {errors: @post.errors}, status: 422
+    end
+
+  end
+
 end
