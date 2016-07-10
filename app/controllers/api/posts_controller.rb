@@ -38,4 +38,15 @@ class Api::PostsController < ApplicationController
 
   end
 
+  def delete
+    @post = Post.find_by id: params[:id]
+    @post.destroy
+    if Post.find_by id:params[:id]
+      render json: {error: "could not delete post with id: #{@post.id}"}, status: 422
+    else
+      render json: {message: "Successfully deleted"}, status: 201
+    end
+
+  end
+
 end

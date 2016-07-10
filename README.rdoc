@@ -90,9 +90,14 @@ request body must follow:
 
 
 5. Delete a post
-    DELETE /api/posts/:id deletes a post
 
+    DELETE /api/posts/:id
 
+If successful, will return json:
+
+{
+  "message": "Successfully deleted"
+}
 
 
 

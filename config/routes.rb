@@ -8,9 +8,9 @@ use_doorkeeper
     get 'api/posts/:id' => "api/posts#show", as: :api_post #returns post detail
     post '/api/posts' => "api/posts#create", as: :api_create_post # creates a post
     patch '/api/posts/:id' => "api/posts#update", as: :api_update_post #updates a post
+    delete '/api/posts/:id' => "api/posts#delete", as: :api_delete_post #deletes a post
 
     # PUT /api/posts/:id updates a post
-    # DELETE /api/posts/:id deletes a post
 
 
   # The priority is based upon order of creation: first created -> highest priority.
