@@ -88,6 +88,15 @@ request body must follow:
   }
 }
 
+returns the updated post in the form:
+
+{
+  "post": {
+    "id": "",
+    "title": ""
+  }
+}
+
 
 5. Delete a post
 
