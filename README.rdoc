@@ -109,10 +109,32 @@ If successful, will return json:
 }
 
 
+6. Create a user
+
+post /api/users
 
 
+request body must follow:
+
+{
+    "user" :{
+
+        "username" : "",
+        "password" : ""
+    }
+}
 
 
+7. Delete a user
+
+delete /api/users/:id
+
+
+If successful, will return json:
+
+{
+  "message": "Successfully deleted user"
+}
 
 == README
 

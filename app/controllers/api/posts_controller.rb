@@ -4,6 +4,7 @@ class Api::PostsController < ApplicationController
 
   before_action :doorkeeper_authorize!
 
+
   before_action do
     request.format = :json
   end

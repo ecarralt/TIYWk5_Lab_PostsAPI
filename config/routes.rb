@@ -13,7 +13,7 @@ use_doorkeeper
 
 
     post '/api/users' => "api/users#create", as: :api_create_user #creates a user
-
+    delete '/api/users/:id' => "api/users#delete", as: :api_delete_user #deletes user
     # PUT /api/posts/:id updates a post
 
 
